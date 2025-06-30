@@ -48,7 +48,7 @@ public class Tela_Menu extends JFrame {
         menu.add(label_logo);
         
         // Carrega a imagem
-        ImageIcon logoIcon = new ImageIcon("Imagens\\Logo java.png");
+        ImageIcon logoIcon = new ImageIcon("../resources/Imagens/Logo_java.png");
         Image image = logoIcon.getImage(); 
         Image newImage = image.getScaledInstance(100, 56, Image.SCALE_SMOOTH);
         ImageIcon newLogoIcon = new ImageIcon(newImage);
@@ -70,7 +70,7 @@ public class Tela_Menu extends JFrame {
         btn_jogar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {           
-                ImageIcon customIcon = new ImageIcon("Jogo_da_velha\\Logo java.png");
+                ImageIcon customIcon = new ImageIcon("Jogo_da_velha\\Logo_java.png");
                 Image custom_img = logoIcon.getImage(); 
                 Image newImage = image.getScaledInstance(48, 24, Image.SCALE_SMOOTH);
                 ImageIcon newCustomIcon = new ImageIcon(newImage);
@@ -106,7 +106,7 @@ public class Tela_Menu extends JFrame {
         
         btn_creditos = new JButton("Créditos");
         btn_creditos.setBounds(140, 200, 100, 40);
-        btn_creditos.setFont(new Font("verdana", Font.BOLD, 14));
+        btn_creditos.setFont(new Font("verdana", Font.BOLD, 12));
         btn_creditos.setForeground(Color.BLACK);
         menu.add( btn_creditos);
         
@@ -140,7 +140,7 @@ public class Tela_Menu extends JFrame {
 
                 panel.add(namegit);
  
-                 ImageIcon githubImage = new ImageIcon("Imagens\\github.png");
+                 ImageIcon githubImage = new ImageIcon("../resources/Imagens/github.png");
                  Image img = githubImage.getImage(); 
                  Image newImg = img.getScaledInstance(200, 200, Image.SCALE_SMOOTH);
                  ImageIcon scaledGithubImage = new ImageIcon(newImg);

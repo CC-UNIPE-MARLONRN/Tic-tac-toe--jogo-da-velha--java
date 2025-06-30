@@ -52,7 +52,7 @@ public class Tela_Jogo extends JFrame {
                 if (botaoClicado.getText().isEmpty()) {
                     // Define o texto do botão com base no jogador atual
                     botaoClicado.setText(String.valueOf(jogadorAtual));
-                    botaoClicado.setFont(new Font("Arial", Font.BOLD, 21));
+                    botaoClicado.setFont(new Font("Arial", Font.BOLD, 19));
                     // Obtém o controle associado ao botão clicado
                     Controle_botoes controle = null;
                     for (Controle_botoes c : listaControle) {
@@ -127,7 +127,7 @@ public class Tela_Jogo extends JFrame {
         
         //Exibe a label onde tem a pontuação
         label = new JLabel();
-        label.setBounds(254, 10, 220, 241);
+        label.setBounds(254, 10, 236, 236);
         label.setBackground(Color.lightGray);
         label.setOpaque(true);
 
@@ -177,7 +177,7 @@ public class Tela_Jogo extends JFrame {
       
         label_vez = new JLabel();
         label_vez.setBounds(285, 200, 150, 50);
-        label_vez.setFont(new Font("Arial", Font.BOLD, 15));
+        label_vez.setFont(new Font("Arial", Font.BOLD, 13));
         label_vez.setHorizontalAlignment(SwingConstants.CENTER);
         label_vez.setText("Vez do jogador: X "); // Sempre começa com X
         label_vez.setForeground(Color.BLACK);
